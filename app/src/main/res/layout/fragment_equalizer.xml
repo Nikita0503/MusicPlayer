@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EQUALIZER"
+            android:textColor="#8AD1D4"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/button_back_player"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarEqualizer3"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer2"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer2" />
+
+    <SeekBar
+        android:id="@+id/seekBarEqualizer1"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_header" />
+
+    <SeekBar
+        android:id="@+id/seekBarEqualizer5"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer4"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer4" />
+
+    <SeekBar
+        android:id="@+id/seekBarEqualizer2"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer1"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer1" />
+
+    <SeekBar
+        android:id="@+id/seekBarEqualizer4"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer3"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer3" />
+
+    <TextView
+        android:id="@+id/textViewEqualizer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 Hz"
+        android:textColor="#8AD1D4"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer1"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer1"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEqualizer1" />
+
+    <TextView
+        android:id="@+id/textViewEqualizer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="230 Hz"
+        android:textColor="#8AD1D4"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer2"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer2"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEqualizer2" />
+
+    <TextView
+        android:id="@+id/textViewEqualizer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="910 Hz"
+        android:textColor="#8AD1D4"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer3"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer3"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEqualizer3" />
+
+    <TextView
+        android:id="@+id/textViewEqualizer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 kHz"
+        android:textColor="#8AD1D4"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer4"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer4"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEqualizer4" />
+
+    <TextView
+        android:id="@+id/textViewEqualizer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 kHz"
+        android:textColor="#8AD1D4"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarEqualizer5"
+        app:layout_constraintStart_toStartOf="@+id/seekBarEqualizer5"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEqualizer5" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/crollerBassBoost"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        app:back_circle_color="#2D8084"
+        app:indicator_color="#2B8A8E"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label_color="#8AD1D4"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer5"
+        app:main_circle_color="#05585C"
+        app:max="1000"
+        app:label="Bass boost"
+        app:progress_primary_color="#03DAC5"
+        app:progress_secondary_color="#005256"
+        app:start_offset="45" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/crollerVirtualizer"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        app:back_circle_color="#2D8084"
+        app:indicator_color="#2B8A8E"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label_color="#8AD1D4"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqualizer5"
+        app:main_circle_color="#05585C"
+        app:max="1000"
+        app:label="Virtualizer"
+        app:progress_primary_color="#03DAC5"
+        app:progress_secondary_color="#026165"
+        app:start_offset="45" />
+</androidx.constraintlayout.widget.ConstraintLayout>
